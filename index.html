@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu-Gi-Oh! Deck validator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Yu-Gi-Oh! Deck validator</h1>
+        <p></p>
+
+ <div class="wrapper">
+      <div class="container" id="dropdownSelected">
+        <span>Selected</span>
+      </div>
+      <div class="container">
+        <select 
+          id="setsSelect"
+          multiple
+          search='true'
+        >
+        <option>sgsadf</option>
+        <option>sgsadf2</option>
+        
+        </select>
+      </div>
+    </div>        
+
+
+        <h2>Filter Card Options:</h2>
+
+
+        <textarea id="textInput" rows="10" placeholder="Enter your Yu-Gi-Oh! ydke here..."></textarea>
+        <button id="showButton">Show</button>
+        <div id="textContainer"></div>
+        <div id="validationContainer"></div>
+
+        
+    </div>
+    <script src="script.js"></script>
+    <script src="lib/multi-select-dropdown.js"></script>
+</body>
+</html>
