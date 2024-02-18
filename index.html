@@ -1,45 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yu-Gi-Oh! Deck validator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Yu-Gi-Oh! Deck validator</h1>
-        <p></p>
+    <div class="row">
+        <div class="column">
+            <div class="containerContent">
+                <h1>Yu-Gi-Oh! Deck validator</h1>
+                <p></p>
 
- <div class="wrapper">
-      <div class="container" id="dropdownSelected">
-        <span>Selected</span>
-      </div>
-      <div class="container">
-        <select 
-          id="setsSelect"
-          multiple
-          search='true'
-        >
-        <option>sgsadf</option>
-        <option>sgsadf2</option>
-        
-        </select>
-      </div>
-    </div>        
+                <div class="wrapper">
+                    <div class="container" id="dropdownSelected">
+                        <span>Selected</span>
+                    </div>
+                    <div class="container">
+                        <select id="setsSelect" multiple search='true'>
+                        </select>
+                    </div>
+                </div>
+                <textarea id="textInput" rows="10" placeholder="Enter your Yu-Gi-Oh! ydke here...">ydke://732KAO99igDvfYoALy5sAC8ubAAOr5sADq+bAC8ubAArOxsADq+bAPbJVAJ2dtAEKzsbABn4KQIrOxsA6PjGAOj4xgDo+MYArnxzBEpwSQPvJf4EQz9PBLAa+wMC8FsEW25lAcoEAAXxRocDQeEIAxn4KQIZ+CkCmRq1AORnRgCZGrUA5GdGAPFGhwOA324F361LAxQdJQWf0a8Dn9GvAw==!!!</textarea>
+                <button id="importButton">import</button>
+                <button id="validateButton">validate</button>
+                <button id="exportButton">Export</button>
+                
+                <div id="textContainer"></div>
 
-
-        <h2>Filter Card Options:</h2>
-
-
-        <textarea id="textInput" rows="10" placeholder="Enter your Yu-Gi-Oh! ydke here..."></textarea>
-        <button id="showButton">Show</button>
-        <div id="textContainer"></div>
-        <div id="validationContainer"></div>
-
-        
+            </div>
+        </div>
+        <div class="column">
+            <div class="containerContent">
+                <h1>DECK CARDS</h1>
+                <div class="box">
+                    <div id="listContainer"></div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="containerContent">
+                <h1>AVAILABLE CARDS</h1>
+                <div class="box">
+                    <table id="availableContainer"></div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
+
+
+
+
     <script src="script.js"></script>
     <script src="lib/multi-select-dropdown.js"></script>
 </body>
+
 </html>
