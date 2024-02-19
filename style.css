@@ -14,7 +14,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.8);
-    max-height:100%;
+    max-height:90vh;
     overflow-y: scroll; /* enable vertical scrollbar */
 }
 
@@ -89,13 +89,14 @@ label {
 button {
     padding: 10px 20px;
     border: none;
-    background-color: #337ab7;
+    background-color: #177cd5;
     color: #fff;
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
     margin-top: 10px;
 }
+
 
 #textContainer {
     padding: 10px;
