@@ -371,9 +371,15 @@ function populateDeckTable() {
     });
     const listContainer = document.getElementById("listContainer");
     listContainer.innerHTML = "";
+
     const main_table =  BuildTable(deck.main, "Main Deck", false)
     const extra_table = BuildTable(deck.extra, "Extra Deck", false)
     const side_table = BuildTable(deck.side, "Side Deck", true)
+    const size_deck = deck.main.length + deck.extra.length + deck.side.length;
+    const price = main_table.price + extra_table.price + side_table.price;
+    const info = document.createElement("div");
+    info.innerHTML = "<p>Cards: " + size_deck + "</p><p> Price: " + price + "</p>";
+    listContainer.appendChild(info);
     listContainer.appendChild(main_table.divTable);
     listContainer.appendChild(extra_table.divTable);
     listContainer.appendChild(side_table.divTable);
